@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Datos</title>
+
+  </head>
+<body>
+  <!--------menu-------->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FE9586;">
+  <a class="navbar-brand" href="index.html">Inicio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="datos.html">Datos personales<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="vocales.html">Las vocales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="consonantes.html">Las consonantes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cues.html">Cuestionario</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+ <!--------header-------->
+
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+     <div class="jumbotron jumbotron-fluid bg-white text-center">
+       <div class="container">
+       <h1>Datos del alumno</h1>
+       <p class="lead">Para conocer más acerca de los estudiantes que esten utilizando nuestra plataforma, necesitamos tu ayuda llenando los siguientes campos con los datos que se solicitan.</p>
+       </div>
+     </div>
+   </div>
+</div>
+
+<!--------cuerpo-------->
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+          <h1 class="display-5">Formulario</h1>
+          <hr class="bg-dark">
+           <p class="text-danger small">*todos los campos son obligatorios</p>
+
+     <section>
+        <form>
+          <!----- nomre ----->
+          <div class="row form-group">
+              <label class="col-form-label col-md-4">Nombre del estudiante</label>
+              <div class="col-md-8">
+              <input type="text" name="" class="form-control" id="code">
+            </div>      
+          </div>
+    
+    <!------ E mail------->
+            <div class="row form-group">
+              <label class="col-form-label col-md-4">E-mail</label>
+              <div class="col-md-8">
+              <input type="text" name="" class="form-control" id="name">
+            </div>        
+          </div>
+
+        <!------ Edad------->
+          <div class="row form-group">
+              <label class="col-form-label col-md-4">Edad</label>
+              <div class="col-md-8">
+              <input type="text" name="" class="form-control" id="direc">
+            </div>        
+          </div>
+
+
+          <!------ Numero ------->
+          <div class="row form-group">
+              <label class="col-form-label col-md-4">Número de teléfono del encargado</label>
+              <div class="col-md-8">
+              <input type="text" name="" class="form-control" id="tel">
+            </div>       
+          </div>
+
+         <!------ Selector ------->
+          <div class="row form-group">
+              <label class="col-form-label col-md-4">Sede</label>
+              <div class="col-md-8">
+                <select class="form-control" id="opc">
+                  <option>Zona 7</option>
+                  <option>Zona 12</option>
+                  <option>El Naranjo</option>
+                  <option>Villa Nueva</option>
+                </select>
+              </div>
+            </div> 
+
+            <!------ Carnet  ------->
+          <div class="row form-group">
+              <label class="col-form-label col-md-4">No. de carnet</label>
+              <div class="col-md-8">
+              <input type="text" name="" class="form-control" id="reser">
+            </div>       
+          </div>
+
+    <input type="button" value="Subir" onclick="dad()" class="btn btn-dark">
+  
+          </div>
+            </div>
+          </form>
+        </form>  
+    </div>
+  </div>
+
+  <script type="text/javascript">
+function dad(){
+  let a = document.getElementById('code').value;
+  let b = document.getElementById('name').value;
+  let c = document.getElementById('direc').value;
+  let d = document.getElementById('tel').value;
+  let e = document.getElementById('opc').value;
+  let f = document.getElementById('reser').value;{
+
+  alert ('Sus datos han sido registrados');
+  document.getElementById('t1').innerHTML=a;
+  document.getElementById('t2').innerHTML=b;
+  document.getElementById('t3').innerHTML=c;
+  document.getElementById('t4').innerHTML=d;
+  document.getElementById('t5').innerHTML=e;
+  document.getElementById('t6').innerHTML=f;
+  }
+}
+
+  </script>
+
+  <form class="text-center">
+    <br>
+<h2>Tus datos ingresados son:</h2>
+  <p id="t1"></p>
+  <p id="t2"></p>
+  <p id="t3"></p>
+  <p id="t4"></p>
+  <p id="t5"></p>
+  <p id="t6"></p>
+  </form>
+</section>
+<h1></h1>
+  </body>
+</html>

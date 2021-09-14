@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Prueba</title>
+
+	</head>
+<body>
+  <!--------menu-------->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FE9586;">
+  <a class="navbar-brand" href="index.html">Inicio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="datos.html">Datos personales<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="vocales.html">Las vocales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="consonantes.html">Las consonantes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cues.html">Cuestionario</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+ 
+ <!--------header-------->
+
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+     <div class="jumbotron jumbotron-fluid bg-white text-center">
+       <div class="container">
+       <h1>Cuestionario</h1>
+       <p class="lead">Ahora que ya conoces las vocales y las consonantes puedes realizar el siguiente cuestionario.</p>
+
+      
+       </div>
+     </div>
+   </div>
+  </div>
+
+
+      
+<!--------cuerpo-------->
+ <div class="container">
+
+  <div class="card-deck">
+          	<!--------Etiqueta 1------->
+     <div class="card">
+    		<img src="imas/im1.png" class="card-img-top" alt="...">
+			<input type="text" name="P1" id="P1" class="form-control"  class="col-md-12" placeholder="            Escribe en este espacio la letra">       
+  	   </div>
+
+
+          <!--------Etiqueta 2------->
+        <div class="card">
+    		<img src="imas/im2.png" class="card-img-top" alt="...">
+			<input type="text" name="P2" id="P2" class="form-control"  class="col-md-12" placeholder="            Escribe en este espacio la letra">       
+  	   </div>
+
+          <!--------Etiqueta 3------->
+        <div class="card">
+    		<img src="imas/im3.png" class="card-img-top" alt="...">
+			<input type="text" name="P3" id="P3" class="form-control"  class="col-md-12" placeholder="            Escribe en este espacio la letra">       
+  	   </div>
+</div>
+
+<div class="container mt-4">
+	<div class="card-deck">
+          <!--------Etiqueta 4------->
+        <div class="card">
+    		<img src="imas/im4.png" class="card-img-top" alt="...">
+			<input type="text" name="P4" id="P4" class="form-control"  class="col-md-12" placeholder="                                Escribe en este espacio la letra">       
+  	   </div>
+
+          <!--------Etiqueta 5------->
+         <div class="card">
+    		<img src="imas/im5.png" class="card-img-top" alt="...">
+			<input type="text" name="P5" id="P5" class="form-control"  class="col-md-12" placeholder="                                Escribe en este espacio la letra">    
+  	   </div>
+     </div>
+   </div>
+   <br>
+    <input type="button" class="btn btn-dark" name="validar" id="validar" onclick="validar();" value="¡Listo!" class=" justify-content: center">
+        </div>
+  </div>
+
+  <h2 class="text-center">Ánimo, ¡Tú puedeees!</h2>
+
+<!------- sCRIPT---------->
+<script type="text/javascript">
+let P1="";
+let P2="";
+let P3="";
+let P4="";
+let P5="";
+let acum=0;
+
+
+function validar() {
+	P1=document.getElementById('P1').value;
+	P2=document.getElementById('P2').value;
+	P3=document.getElementById('P3').value;
+	P4=document.getElementById('P4').value;
+	P5=document.getElementById('P5').value;
+	v1=20;
+	acum=0;
+	
+
+//Pregunta1
+	if (P1=="d"){
+		acum=acum+v1;
+		javascript:void(document.getElementById('P1').style.backgroundColor='#9EFF00');
+	} else{
+		acum=acum+0;
+		javascript:void(document.getElementById('P1').style.backgroundColor='#FF4030');
+	}
+	//Pregunta2
+		if (P2=="t"){
+			acum=acum+v1;
+			javascript:void(document.getElementById('P2').style.backgroundColor='#9EFF00');
+		} else{
+			acum=acum+0;
+			javascript:void(document.getElementById('P2').style.backgroundColor='#FF4030');
+		}
+		//Pregunta3
+			if (P3=="a"){
+				acum=acum+v1;
+				javascript:void(document.getElementById('P3').style.backgroundColor='#9EFF00');
+			} else{
+				acum=acum+0;
+				javascript:void(document.getElementById('P3').style.backgroundColor='#FF4030');
+			}	
+			//Pregunta4	
+				if (P4=="z"){
+					acum=acum+v1;
+					javascript:void(document.getElementById('P4').style.backgroundColor='#9EFF00');
+				} else{
+					acum=acum+0;
+					javascript:void(document.getElementById('P4').style.backgroundColor='#FF4030');
+				}	
+				//Pregunta5
+					if (P5=="o"){
+						acum=acum+v1;
+						javascript:void(document.getElementById('P5').style.backgroundColor='#9EFF00');
+					} else{
+						acum=acum+0;
+						javascript:void(document.getElementById('P5').style.backgroundColor='#FF4030');
+					}
+	
+	 alert("La nota es "+acum).value;
+}
+
+</script>
+</body>
+</html>
